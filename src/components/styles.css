@@ -1,0 +1,150 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 10px;
+  font-size: calc(6px + 2vmin);
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#page-title {
+  font-size: calc(10px + 2vmin);
+  color: lemonchiffon;
+}
+
+#searchMsg {
+  font-size: 0.9em;
+}
+
+.recipeList {
+  display: flex;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ccc7d4;
+}
+
+.recipe-card {
+  border: 1px solid black;
+  background-color: #ad0d65;
+  margin: 10px;
+  width:220px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.card-header p {
+  font-size: 1.2em;
+}
+.delete-btn {
+  font-size: 0.5em;
+}
+
+.recipe-card img {
+  margin: 0.4em;
+  max-height: 350px;
+  height: auto;
+  padding: 0.1em;
+  object-fit: cover;
+  border: 3px solid #1c0080;
+
+}
+
+.rcp-details {
+  margin-top: 0.6em;
+  padding: 0.4em;
+}
+ul {
+  list-style: none;
+ 
+}
+.container {
+  width: 1100px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar {
+  background: rgb(245, 234, 234);
+  max-height: 60px;
+}
+
+.nav-bar .menu {
+  font-weight: 500;
+  justify-content: start;
+  padding: 20px;
+}
+
+.nav-bar .menu li {
+  margin-left: 30px;
+  padding-bottom: 2px;
+ 
+}
+h5{
+  color:black;
+}
+.addbtn{
+  width: 120px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 45px; 
+    margin-bottom: 10px;
+    background-color:rgb(150, 9, 216);
+color:white;
+}
+footer {
+  padding: 1.1rem;
+  font-size: 9px;
+  background-color: #1d1d1f;
+  color: white;
+}
+
+
+/* Rating component */
+
+.star-rating {
+
+  display:flex;
+ 
+  flex-direction: row-reverse;
+  font-size:2.0em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+  margin-left:22px;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
